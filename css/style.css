@@ -1,0 +1,170 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, section, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column; /* Menyusun header dan garis pemisah secara vertikal */
+    align-items: flex-end; /* Menyusun elemen header ke kanan */
+    padding: 10px 0;
+    position: relative;
+}
+
+header .logo{
+    display: block;
+    width: 40px;
+    /* Sesuaikan dengan lebar logo */
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+nav {
+    width: 100%; /* Memastikan nav menggunakan lebar penuh header */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Menyusun item navbar ke kanan */
+}
+
+nav ul li {
+    margin-left: 20px; /* Jarak antara item navbar */
+}
+
+/* Header Separator */
+.header-separator {
+    border: 0;
+    height: 1px;
+    background-color: #ddd; /* Warna garis */
+    margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.welcome-section .image-placeholder {
+    width: 1366px;
+    height: 578px;
+    background-color: #ccc;
+    margin: 20px auto;
+}
+
+/* Facilitation Section */
+.facilitation-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.facilities {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.facility {
+    text-align: center;
+}
+
+.facility .icon {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Message Us Section */
+.message-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.message-section form {
+    width: 60%;
+}
+
+.message-section form label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.message-section form input[type="text"],
+.message-section form input[type="date"],
+.message-section form textarea {
+    width: calc(100% - 130px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.message-section form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.message-section form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.message-section .current-time {
+    width: 35%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+    margin-top: 20px;
+}
